@@ -1,30 +1,52 @@
 NEGÓCIO
 ******** 
-
-
+O negócio tem como funcionalidade executar o cálculo da área e perímetro de uma circunferência. E se destina a estudantes e profissionais da área de arquitetura, que possuem alguma dificuldade na hora da realização de um projeto arquitetônico, ou buscam a conferência dos resultados de cálculos durante a realização dos desenhos em seus projetos.
 
 PROBLEMAS/OPORTUNIDADES
 ***********************
+Atualmente, ao projetar uma área aredondada em um projeto, alguns estudantes e profissionais encontram certa dificuldade em realizar o cálculo de imediato, e isso gera atrasos e erros durante o projeto.
 
+Que problemas são esses?
+Embora os estudantes e profissionais estejam aptos a executar os cálculos, as vezes esbarram em requisitos de projetos mais complexos, onde é necessário que o cálculo da área projetada seja ainda mais preciso. E ainda existem pessoas com certa dificuldade de executar cálculos geométricos usando apenas papel e caneta. Além de sempre ser preciso fazer a conferência desses cálculos para que não existam erros na execução da obra. 
 
+Por que desenvolver um sistema de cálculo de área e perímetro de circunferência?
+Hoje em dia, a maior reclamação durante o andamento de um projeto arquitetônico, é o atraso durante as entregas e erros de projeto. O sistema ajudará a compor os cálculos rapidamente e de forma precisa, diminuindo o tempo das entregas e garantindo precisão nas áreas aredondadas dos projetos.
 
+Por que não existem sistemas atualmente para resolver esses problemas?
+Atualmente as únicas possibilidades de execução de cálculos precisos para encontrar a área e perímetro de uma circunferência, é através de um sistema integrado a softwares pesados, e nem todo estudante tem a possibilidade e equipamento necessário para rodar esses softwares. 
 
+Por que não buscam a solução na internet?
+Em alguns momentos é necessário que os estudantes e profissionais tenham que ir a campo para acompanhar o andamento das obras, e eventualmente precisam fazer alterações rápidas no projeto, ou desenhos simples para futuras alterações. Alguns locais não possuem sinal de internet, assim existe a necessidade de um sistema eficiente  que não necessite de acesso a internet.
+
+Quais as soluções propostas anteriormente?
+Utilização de calculadora;
+Fazer os cálculos na mão, utilizando papel e caneta;
+Procurar soluções na internet;
+Auxilio de softwares de desenhos (AutoCAD).
 
 STAKEHOLDERS
 ************
+Estudantes de arquitetura;
+Arquitetos;
+Engenheiros;
+Designers de interiores;
+Professores;
 
 
 VOCÁBULOS DE NEGÓCIO
 ********************
+AutoCAD (Desenho assistido por computador)
 
+Software utilizado para facilitar o projeto e desenho técnicos. 
 
 
 ATIVIDADE DE NEGÓCIO
 ********************
-- A001 - 
-- A002 - 
-- A003 - 
-- A004 -
+- A001 – Calcular a área de uma circunferência;
+- A002 – Calcular perímetro da circunferência;
+- A003 – Calcular área do retângulo;
+- A004 – Calcular perímetro do retângulo;
+- A005 – Selecionar a unidade de medida;
 
 PROCESSOS DE NEGÓCIO
 ******************** 

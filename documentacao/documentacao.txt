@@ -1,0 +1,44 @@
+NEGÓCIO
+******** 
+
+
+
+PROBLEMAS/OPORTUNIDADES
+***********************
+
+
+
+
+
+STAKEHOLDERS
+************
+
+
+VOCÁBULOS DE NEGÓCIO
+********************
+
+
+
+ATIVIDADE DE NEGÓCIO
+********************
+- A001 - 
+- A002 - 
+- A003 - 
+- A004 -
+
+PROCESSOS DE NEGÓCIO
+******************** 
+- A001 a A004
+
+REGRAS DE NEGÓCIO
+*****************
+RN0001 - 
+        
+RN0002 -
+
+REQUISITOS
+**********
+HU0001 - Eu, como _____________, desejo ______________, 
+HU0002 - Eu, como _____________, desejo ______________,  
+HU0003 - Eu, como _____________, desejo ______________, 
+HU0004 - Eu, como _____________, desejo ______________, 

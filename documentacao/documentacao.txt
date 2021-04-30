@@ -47,10 +47,16 @@ ATIVIDADE DE NEGÓCIO
 - A003 – Calcular área do retângulo;
 - A004 – Calcular perímetro do retângulo;
 - A005 – Selecionar a unidade de medida;
+- A006 - Armazenar resultados para consultas posteriores.
 
 PROCESSOS DE NEGÓCIO
 ******************** 
-- A001 a A004
+- A001 – O usuário entra com o valor de Pi(3,14), o sistema recebe e armazena esse valor. Após, o usuário entra com o valor do raio da circunferência que deseja obter a área, o sistema recebe e armazena esse valor. Será exibido na tela os valores para que o usuário confirme. Ao confirmar, o sistema executará o cálculo de acordo com os valores informados, baseando-se formula do cálculo de área de circunferência, e apresentará na tela o resultado para o usuário.
+- A002 – O usuário entra com o valor de Pi(3,14), o sistema recebe e armazena esse valor. Após, o usuário entra com o valor do raio da circunferência que deseja obter a área, o sistema recebe e armazena esse valor. Será exibido na tela os valores para que o usuário confirme. Ao confirmar, o sistema executará o cálculo de acordo com os valore informados, baseando-se na formula do cálculo de perímetro de circunferência, e apresentará na tela o resultado para o usuário.
+- A003 – O usuário entra com o valor da base do retângulo, o sistema recebe e armazena esse valor. Após, o usuário entra com o valor da altura do retângulo que deseja obter a área, o sistema recebe e armazena esse valor. Será exibido na tela os valores para que o usuário confirme. Ao confirmar, o sistema executará o cálculo de acordo com os valore informados, baseando-se na formula do cálculo de área de retângulo, e apresentará na tela o resultado para o usuário.
+- A004 – O usuário entra com o valor da base do retângulo, o sistema recebe e armazena esse valor. Após, o usuário entra com o valor da altura do retângulo que deseja obter a área, o sistema recebe e armazena esse valor. Será exibido na tela os valores para que o usuário confirme. Ao confirmar, o sistema executará o cálculo de acordo com os valore informados, baseando-se na formula do cálculo de perímetro de retângulo, e apresentará na tela o resultado para o usuário.
+- A005 -
+- A006 -
 
 REGRAS DE NEGÓCIO
 *****************
@@ -60,7 +66,9 @@ RN0002 -
 
 REQUISITOS
 **********
-HU0001 - Eu, como _____________, desejo ______________, 
-HU0002 - Eu, como _____________, desejo ______________,  
-HU0003 - Eu, como _____________, desejo ______________, 
-HU0004 - Eu, como _____________, desejo ______________, 
+HU0001 - Eu, como arquiteto, desejo obter o resultado da área de uma circunferência, para executar meu projeto com exatidão.
+HU0002 - Eu, como arquiteto, desejo obter o resultado do perímetro de uma circunferência, para executar meu projeto com exatidão.
+HU0003 - Eu, como arquiteto, desejo obter o resultado da área de um retângulo, para executar meu projeto com exatidão.
+HU0004 - Eu, como arquiteto, desejo obter o resultado do perímetro de um retângulo, para executar meu projeto com exatidão.
+HU0005 - Eu, como arquiteto, desejo alterar as unidades de medida durante o cálculo, para obter resultados precisos em diferentes medidas, de acordo com os requisitos do projeto arquitetônico.
+HU0006 - Eu, como arquiteto, desejo ter um histórico dos cálculos com data, para consultas posteriores quando for necessário para o projeto. 

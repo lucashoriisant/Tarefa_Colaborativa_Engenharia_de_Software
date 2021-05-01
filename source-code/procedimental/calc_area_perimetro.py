@@ -61,12 +61,14 @@ if (chooseFigure == 1):
 
         circunferenciaCirculo = calculaCircunferenciaCirculo(
             piCirculo, raioCirculo)
+        format(circunferenciaCirculo, ".2f")
         print(f"Perímetro da circunferência: {circunferenciaCirculo}")
     elif chooseCalc == 2:
         # Área circunferência
         print(f"Pi: {piCirculo} | Raio: {raioCirculo}.")
 
         areaCirculo = calculaAreaCirculo(piCirculo, raioCirculo)
+        format(areaCirculo, ".2f")
         print(f"Área da circunferência: {areaCirculo}")
     else:
         print("ERRO")
@@ -80,10 +82,12 @@ elif (chooseFigure == 2):
     if chooseCalc == 1:
         # Perímetro retangulo
         perimetroRetangulo = calculaPerimetroRetangulo(baseRet, alturaRet)
+        format(perimetroRetangulo, ".2f")
         print(f"Perímetro do retângulo: {perimetroRetangulo}")
     elif chooseCalc == 2:
         # Área retângulo
         areaRetangulo = calculaAreaRetangulo(baseRet, alturaRet)
+        format(areaRetangulo, ".2f")
         print(f"Área do retângulo: {areaRetangulo}")
     else:
         print("ERRO")

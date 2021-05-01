@@ -6,9 +6,11 @@ raio = float(0)
 base = float(0)
 altura = float(0)
 
+unit = "cm"
+
 
 def recebeDadosCirculo(pi, raio):
-    raio = float(input("Digite o raio da circunferência:"))
+    raio = float(input("\nAgora, digite o raio do circulo: "))
     changePi = input("Deseja alterar o valor de pi? (S/N) ")
 
     if (changePi == "S"):
@@ -29,8 +31,8 @@ def calculaAreaCirculo(pi, raio):
 
 
 def recebeDadosRetangulo(base, altura):
-    base = float(input("Digite a base do retangulo: "))
-    altura = float(input("Digite a altura do retângulo: "))
+    base = float(input("\nAgora, digite a base do retangulo: "))
+    altura = float(input("E a altura do retângulo: "))
 
     return [base, altura]
 
@@ -43,34 +45,50 @@ def calculaAreaRetangulo(base, altura):
     return base*altura
 
 
-print("CALCULO DE ÁREA E PERÍMETRO\n===============\n")
+print("CALCULO DE AREA E PERIMETRO\n===============\n")
+print("Figuras disponiveis:\n  1 - Circulo\n  2 - Retangulo")
+chooseFigure = int(input("Digite o índice da figura desejada: "))
 
-# Perímetro circunferência
-print("\nPerímetro da circunferência\n")
+# Círculo
+if (chooseFigure == 1):
+    piCirculo, raioCirculo = recebeDadosCirculo(pi, raio)
 
-piCirculo, raioCirculo = recebeDadosCirculo(pi, raio)
-print(f"Pi: {piCirculo} | Raio: {raioCirculo}.")
-circunferenciaCirculo = calculaCircunferenciaCirculo(piCirculo, raioCirculo)
-print(f"Perímetro da circunferência: {circunferenciaCirculo}")
+    print("\nCalculos disponiveis em circulo:\n  1 - Perimetro\n  2 - Area")
+    chooseCalc = int(input("Digite o índice do calculo desejado: "))
+    if chooseCalc == 1:
+        # Perímetro circunferência
+        print(f"Pi: {piCirculo} | Raio: {raioCirculo}.")
 
+        circunferenciaCirculo = calculaCircunferenciaCirculo(
+            piCirculo, raioCirculo)
+        print(f"Perímetro da circunferência: {circunferenciaCirculo}")
+    elif chooseCalc == 2:
+        # Área circunferência
+        print(f"Pi: {piCirculo} | Raio: {raioCirculo}.")
 
-# Área circunferência
-print("\nÁrea da circunferência\n")
+        areaCirculo = calculaAreaCirculo(piCirculo, raioCirculo)
+        print(f"Área da circunferência: {areaCirculo}")
+    else:
+        print("ERRO")
+        exit
+# Retângulo
+elif (chooseFigure == 2):
+    baseRet, alturaRet = recebeDadosRetangulo(base, altura)
 
-piCirculo, raioCirculo = recebeDadosCirculo(pi, raio)
-areaCirculo = calculaAreaCirculo(piCirculo, raioCirculo)
-print(f"Área da circunferência: {areaCirculo}")
-
-# Perímetro retangulo
-print("\nPerímetro do retangulo\n")
-
-baseRet, alturaRet = recebeDadosRetangulo(base, altura)
-perimetroRetangulo = calculaPerimetroRetangulo(baseRet, alturaRet)
-print(f"Perímetro do retângulo: {perimetroRetangulo}")
-
-
-# Área retângulo
-print("\nÁrea do retângulo\n")
-baseRet, alturaRet = recebeDadosRetangulo(base, altura)
-areaRetangulo = calculaAreaRetangulo(baseRet, alturaRet)
-print(f"Área do retângulo: {areaRetangulo}")
+    print("\nCalculos disponiveis em retangulo:\n  1 - Perimetro\n  2 - Area")
+    chooseCalc = int(input("Digite o índice do calculo desejado: "))
+    if chooseCalc == 1:
+        # Perímetro retangulo
+        perimetroRetangulo = calculaPerimetroRetangulo(baseRet, alturaRet)
+        print(f"Perímetro do retângulo: {perimetroRetangulo}")
+    elif chooseCalc == 2:
+        # Área retângulo
+        areaRetangulo = calculaAreaRetangulo(baseRet, alturaRet)
+        print(f"Área do retângulo: {areaRetangulo}")
+    else:
+        print("ERRO")
+        exit
+# Error
+else:
+    print("ERRO")
+    exit

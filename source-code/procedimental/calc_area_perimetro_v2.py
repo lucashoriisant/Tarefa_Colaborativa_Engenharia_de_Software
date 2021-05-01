@@ -78,12 +78,23 @@ def areaRectangle():
 
 def Rectangle():
     switcher = {
-        1: perimeter,
-        2: areaRectangle,
+        1: {
+            'name': 'Perimetro',
+            'function': perimeter
+        },
+        2: {
+            'name': 'Area',
+            'function': areaRectangle
+        }
     }
-    choiceCalc = int(input("Digite o cálculo desejado: "))
-    func = switcher.get(choiceCalc, lambda: "Escolha invalida")
-    result = func()
+
+    print("\nCalculos disponiveis:")
+    for i, value in switcher.items():
+        print(i, '-', value['name'])
+
+    choiceCalc = int(input("Digite o indice do cálculo desejado: "))
+    function = switcher[choiceCalc]['function']
+    result = function()
 
     return result
 
@@ -98,18 +109,19 @@ def figure_list():
             'name': "Retangulo",
             'function': Rectangle
         },
-        # 1: circle,
-        # 2: rectangle,
     }
 
-    print("Figuras disponíveis:\n")
+    print("Figuras disponiveis:")
+    for i, value in switcher.items():
+        print(i, '-', value['name'])
 
-    # for key, value in switcher.items():
-    #     print(key, ' : ', value)
+    print(f"{(len(switcher)+1)} - SAIR")
+    choice = int(input("\nDigite o indice da figura desejada: "))
 
-    choice = int(input("Digite o indice da figura desejada: "))
+    if (choice > len(switcher) or choice < 1):
+        print("Bye!")
+        quit()
 
-    # func = switcher.get(choice, lambda: "Escolha invalida")
     function = switcher[choice]['function']
     result, msg = function()
     formatResult = round(result, 2)

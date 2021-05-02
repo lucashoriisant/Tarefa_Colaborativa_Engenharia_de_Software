@@ -60,10 +60,27 @@ PROCESSOS DE NEGÓCIO
 
 REGRAS DE NEGÓCIO
 *****************
-RN0001 - 
-        
-RN0002 -
-
+R0001 - O programa deve calcular a área da circunferência com base nos valores digitados pelo usuário, sendo eles:
+* Valor de Pi (float)
+* Valor do raio da circunferência (float)
+R0002 - O resultado deve ser exibido com duas casas decimais de precisão;
+R0003 - Deve ser armazenado no sistema o valor recebido para que o usuário faça a consulta posteriormente.;
+R0004 - O programa deve calcular o perímetro da circunferência com base nos valores digitados pelo usuário, sendo eles:
+* Valor de Pi (float)
+* Valor do raio da circunferência (float)
+R0005 - O resultado deve ser exibido com duas casas decimais de precisão;
+R0006 - Deve ser armazenado no sistema o valor recebido para que o usuário faça a consulta posteriormente;
+R0007 - O programa deve calcular a área de um retângulo com base nos valores digitados pelo usuário, sendo eles:
+* Valor da base do retângulo (float)
+* Valor da altura do retângulo (float)
+R0008 - O resultado deve ser exibido com duas casas decimais de precisão;    
+R0009 - Deve ser armazenado no sistema o valor recebido para que o usuário faça a consulta posteriormente;
+R0010 - O programa deve calcular o perímetro de um retângulo com base nos valores digitados pelo usuário, sendo eles:
+* Valor da base do retângulo (float)
+* Valor da altura do retângulo (float)
+R0011 - O resultado deve ser exibido com duas casas decimais de precisão;    
+R0012 - Deve ser armazenado no sistema o valor recebido para que o usuário faça a consulta posteriormente;
+     
 REQUISITOS
 **********
 HU0001 - Eu, como arquiteto, desejo obter o resultado da área de uma circunferência, para executar meu projeto com exatidão.

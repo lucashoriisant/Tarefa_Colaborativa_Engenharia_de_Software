@@ -6,11 +6,41 @@ raio = float(0)
 base = float(0)
 altura = float(0)
 
+units = ["centimetros","metros","kilometros"]
+activeUnit = units[1]
+
+resultList = []
+
+def chooseUnit():
+    global units
+    global activeUnit
+
+    print("\nEscolha uma unidade de medida para calcular:")
+    for i in range(len(units)):
+        print (f"{i} - {units[i]}")
+
+    unitIndex = int(input("\nUnidade: "))
+    activeUnit = units[unitIndex]
+
+    return activeUnit
+
+
+def keepCalcFunction():
+        keepCalc = str(input("\nDeseja fazer outro calculo? (S/N) ").upper())
+        if keepCalc == "S":
+            figure_list()
+        elif keepCalc == "N":
+            exit
+        else:
+            print("Opcao invalida!")
+            keepCalcFunction()
+
 
 def circumference():
     global pi
+    global activeUnit
 
-    raio = float(input("\nDigite o raio do circulo: "))
+    raio = float(input(f"\nDigite o raio do circulo (em {activeUnit}): "))
     changePi = input("Deseja alterar o valor de pi? (S/N) ").upper()
 
     if (changePi == "S"):
@@ -20,7 +50,8 @@ def circumference():
         print("valor de pi nao foi alterado")
 
     circumferenceValue = 2*pi*raio
-    msg = f"Pi: {pi} | Raio: {raio}\nCircunferencia: "
+    
+    msg = f"Pi: {pi} | Raio: {raio} {activeUnit}\nCircunferencia: "
     return [circumferenceValue, msg]
 
 
@@ -121,15 +152,30 @@ def figure_list():
     if (choice > len(switcher) or choice < 1):
         print("Bye!")
         quit()
-
+    
+    activeUnit = chooseUnit()
+    
     function = switcher[choice]['function']
     result, msg = function()
-    formatResult = round(result, 2)
+    formatResult = str(round(result, 2))
 
     print(
-        f"Resultado do cálculo em {switcher[choice]['name']}: \n"
+        f"Resultado do cálculo do {switcher[choice]['name']} em {activeUnit}: \n"
     )
-    print(msg, formatResult)
+    resultMsg = msg, formatResult, activeUnit
+
+    print(msg, formatResult, activeUnit)
+    # print(resultMsg)
+    # formatResultMsg = " | ".join(resultMsg)
+    # print(resultMsg)
+
+    resultList.append(resultMsg)
+    
+    for i in range(len(resultList)):
+        print (f"{i} - {resultList[i]}")
+
+
+    keepCalcFunction()
 
     input("\npressione Enter para sair...")
 

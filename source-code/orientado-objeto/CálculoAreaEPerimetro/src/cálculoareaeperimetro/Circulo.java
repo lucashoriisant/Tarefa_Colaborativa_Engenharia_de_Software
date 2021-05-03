@@ -82,7 +82,7 @@ public class Circulo {
         }
         return 0;
     }  
-    void calcularArea(){
+    public void calcularArea(){
         this.setArea(getRaio() * getRaio() * getPi());
     }
     

@@ -5,8 +5,10 @@ public class CálculoAreaEPerimetro {
         
         c1.calcularArea();
         c1.estadoAtual();
+       
+        Retangulo r1 = new Retangulo(false, true, 5, 2);
         
-  
-    }
-    
+        r1.calcularArea();
+        r1.estadoAtual();   
+    }  
 }

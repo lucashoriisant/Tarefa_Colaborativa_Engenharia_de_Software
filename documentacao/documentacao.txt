@@ -1,23 +1,31 @@
-<<<<<<< HEAD
 NEGÓCIO
-******** 
-O negócio tem como funcionalidade executar o cálculo da área e perímetro de uma circunferência. E se destina a estudantes e profissionais da área de arquitetura, que possuem alguma dificuldade na hora da realização de um projeto arquitetônico, ou buscam a conferência dos resultados de cálculos durante a realização dos desenhos em seus projetos.
+******* 
+O negócio tem como funcionalidade executar o cálculo da área e perímetro de uma circunferência. E se destina a estudantes e profissionais da área de arquitetura, que
+possuem alguma dificuldade na hora da realização de um projeto arquitetônico, ou buscam a conferência dos resultados de cálculos durante a realização dos desenhos em 
+seus projetos.
 
 PROBLEMAS/OPORTUNIDADES
 ***********************
-Atualmente, ao projetar uma área aredondada em um projeto, alguns estudantes e profissionais encontram certa dificuldade em realizar o cálculo de imediato, e isso gera atrasos e erros durante o projeto.
+Atualmente, ao projetar uma área aredondada em um projeto, alguns estudantes e profissionais encontram certa dificuldade em realizar o cálculo de imediato, e isso gera
+atrasos e erros durante o projeto.
 
 Que problemas são esses?
-Embora os estudantes e profissionais estejam aptos a executar os cálculos, as vezes esbarram em requisitos de projetos mais complexos, onde é necessário que o cálculo da área projetada seja ainda mais preciso. E ainda existem pessoas com certa dificuldade de executar cálculos geométricos usando apenas papel e caneta. Além de sempre ser preciso fazer a conferência desses cálculos para que não existam erros na execução da obra. 
+Embora os estudantes e profissionais estejam aptos a executar os cálculos, as vezes esbarram em requisitos de projetos mais complexos, onde é necessário que o cálculo 
+da área projetada seja ainda mais preciso. E ainda existem pessoas com certa dificuldade de executar cálculos geométricos usando apenas papel e caneta. Além de sempre 
+ser preciso fazer a conferência desses cálculos para que não existam erros na execução da obra. 
 
 Por que desenvolver um sistema de cálculo de área e perímetro de circunferência?
-Hoje em dia, a maior reclamação durante o andamento de um projeto arquitetônico, é o atraso durante as entregas e erros de projeto. O sistema ajudará a compor os cálculos rapidamente e de forma precisa, diminuindo o tempo das entregas e garantindo precisão nas áreas aredondadas dos projetos.
+Hoje em dia, a maior reclamação durante o andamento de um projeto arquitetônico, é o atraso durante as entregas e erros de projeto. O sistema ajudará a compor os 
+cálculos rapidamente e de forma precisa, diminuindo o tempo das entregas e garantindo precisão nas áreas aredondadas dos projetos.
 
 Por que não existem sistemas atualmente para resolver esses problemas?
-Atualmente as únicas possibilidades de execução de cálculos precisos para encontrar a área e perímetro de uma circunferência, é através de um sistema integrado a softwares pesados, e nem todo estudante tem a possibilidade e equipamento necessário para rodar esses softwares. 
+Atualmente as únicas possibilidades de execução de cálculos precisos para encontrar a área e perímetro de uma circunferência, é através de um sistema integrado a 
+softwares pesados, e nem todo estudante tem a possibilidade e equipamento necessário para rodar esses softwares. 
 
 Por que não buscam a solução na internet?
-Em alguns momentos é necessário que os estudantes e profissionais tenham que ir a campo para acompanhar o andamento das obras, e eventualmente precisam fazer alterações rápidas no projeto, ou desenhos simples para futuras alterações. Alguns locais não possuem sinal de internet, assim existe a necessidade de um sistema eficiente  que não necessite de acesso a internet.
+Em alguns momentos é necessário que os estudantes e profissionais tenham que ir a campo para acompanhar o andamento das obras, e eventualmente precisam fazer 
+alterações rápidas no projeto, ou desenhos simples para futuras alterações. Alguns locais não possuem sinal de internet, assim existe a necessidade de um sistema 
+eficiente  que não necessite de acesso a internet.
 
 Quais as soluções propostas anteriormente?
 Utilização de calculadora;
@@ -51,88 +59,20 @@ ATIVIDADE DE NEGÓCIO
 - A006 - Armazenar resultados para consultas posteriores.
 
 PROCESSOS DE NEGÓCIO
-******************** 
-- A001 – O usuário entra com o valor de Pi(3,14), o sistema recebe e armazena esse valor. Após, o usuário entra com o valor do raio da circunferência que deseja obter a área, o sistema recebe e armazena esse valor. Será exibido na tela os valores para que o usuário confirme. Ao confirmar, o sistema executará o cálculo de acordo com os valores informados, baseando-se formula do cálculo de área de circunferência, e apresentará na tela o resultado para o usuário.
-- A002 – O usuário entra com o valor de Pi(3,14), o sistema recebe e armazena esse valor. Após, o usuário entra com o valor do raio da circunferência que deseja obter a área, o sistema recebe e armazena esse valor. Será exibido na tela os valores para que o usuário confirme. Ao confirmar, o sistema executará o cálculo de acordo com os valore informados, baseando-se na formula do cálculo de perímetro de circunferência, e apresentará na tela o resultado para o usuário.
-- A003 – O usuário entra com o valor da base do retângulo, o sistema recebe e armazena esse valor. Após, o usuário entra com o valor da altura do retângulo que deseja obter a área, o sistema recebe e armazena esse valor. Será exibido na tela os valores para que o usuário confirme. Ao confirmar, o sistema executará o cálculo de acordo com os valore informados, baseando-se na formula do cálculo de área de retângulo, e apresentará na tela o resultado para o usuário.
-- A004 – O usuário entra com o valor da base do retângulo, o sistema recebe e armazena esse valor. Após, o usuário entra com o valor da altura do retângulo que deseja obter a área, o sistema recebe e armazena esse valor. Será exibido na tela os valores para que o usuário confirme. Ao confirmar, o sistema executará o cálculo de acordo com os valore informados, baseando-se na formula do cálculo de perímetro de retângulo, e apresentará na tela o resultado para o usuário.
-- A005 -
-- A006 -
-
-REGRAS DE NEGÓCIO
-*****************
-RN0001 - 
-        
-RN0002 -
-
-REQUISITOS
-**********
-HU0001 - Eu, como arquiteto, desejo obter o resultado da área de uma circunferência, para executar meu projeto com exatidão.
-HU0002 - Eu, como arquiteto, desejo obter o resultado do perímetro de uma circunferência, para executar meu projeto com exatidão.
-HU0003 - Eu, como arquiteto, desejo obter o resultado da área de um retângulo, para executar meu projeto com exatidão.
-HU0004 - Eu, como arquiteto, desejo obter o resultado do perímetro de um retângulo, para executar meu projeto com exatidão.
-HU0005 - Eu, como arquiteto, desejo alterar as unidades de medida durante o cálculo, para obter resultados precisos em diferentes medidas, de acordo com os requisitos do projeto arquitetônico.
-HU0006 - Eu, como arquiteto, desejo ter um histórico dos cálculos com data, para consultas posteriores quando for necessário para o projeto. 
-=======
-NEGÓCIO
-******** 
-O negócio tem como funcionalidade executar o cálculo da área e perímetro de uma circunferência. E se destina a estudantes e profissionais da área de arquitetura, que possuem alguma dificuldade na hora da realização de um projeto arquitetônico, ou buscam a conferência dos resultados de cálculos durante a realização dos desenhos em seus projetos.
-
-PROBLEMAS/OPORTUNIDADES
-***********************
-Atualmente, ao projetar uma área aredondada em um projeto, alguns estudantes e profissionais encontram certa dificuldade em realizar o cálculo de imediato, e isso gera atrasos e erros durante o projeto.
-
-Que problemas são esses?
-Embora os estudantes e profissionais estejam aptos a executar os cálculos, as vezes esbarram em requisitos de projetos mais complexos, onde é necessário que o cálculo da área projetada seja ainda mais preciso. E ainda existem pessoas com certa dificuldade de executar cálculos geométricos usando apenas papel e caneta. Além de sempre ser preciso fazer a conferência desses cálculos para que não existam erros na execução da obra. 
-
-Por que desenvolver um sistema de cálculo de área e perímetro de circunferência?
-Hoje em dia, a maior reclamação durante o andamento de um projeto arquitetônico, é o atraso durante as entregas e erros de projeto. O sistema ajudará a compor os cálculos rapidamente e de forma precisa, diminuindo o tempo das entregas e garantindo precisão nas áreas aredondadas dos projetos.
-
-Por que não existem sistemas atualmente para resolver esses problemas?
-Atualmente as únicas possibilidades de execução de cálculos precisos para encontrar a área e perímetro de uma circunferência, é através de um sistema integrado a softwares pesados, e nem todo estudante tem a possibilidade e equipamento necessário para rodar esses softwares. 
-
-Por que não buscam a solução na internet?
-Em alguns momentos é necessário que os estudantes e profissionais tenham que ir a campo para acompanhar o andamento das obras, e eventualmente precisam fazer alterações rápidas no projeto, ou desenhos simples para futuras alterações. Alguns locais não possuem sinal de internet, assim existe a necessidade de um sistema eficiente  que não necessite de acesso a internet.
-
-Quais as soluções propostas anteriormente?
-Utilização de calculadora;
-Fazer os cálculos na mão, utilizando papel e caneta;
-Procurar soluções na internet;
-Auxilio de softwares de desenhos (AutoCAD).
-
-STAKEHOLDERS
-************
-Estudantes de arquitetura;
-Arquitetos;
-Engenheiros;
-Designers de interiores;
-Professores;
-
-
-VOCÁBULOS DE NEGÓCIO
 ********************
-AutoCAD (Desenho assistido por computador)
-
-Software utilizado para facilitar o projeto e desenho técnicos. 
-
-
-ATIVIDADE DE NEGÓCIO
-********************
-- A001 – Calcular a área de uma circunferência;
-- A002 – Calcular perímetro da circunferência;
-- A003 – Calcular área do retângulo;
-- A004 – Calcular perímetro do retângulo;
-- A005 – Selecionar a unidade de medida;
-- A006 - Armazenar resultados para consultas posteriores.
-
-PROCESSOS DE NEGÓCIO
-******************** 
-- A001 – O usuário entra com o valor de Pi(3,14), o sistema recebe e armazena esse valor. Após, o usuário entra com o valor do raio da circunferência que deseja obter a área, o sistema recebe e armazena esse valor. Será exibido na tela os valores para que o usuário confirme. Ao confirmar, o sistema executará o cálculo de acordo com os valores informados, baseando-se formula do cálculo de área de circunferência, e apresentará na tela o resultado para o usuário.
-- A002 – O usuário entra com o valor de Pi(3,14), o sistema recebe e armazena esse valor. Após, o usuário entra com o valor do raio da circunferência que deseja obter a área, o sistema recebe e armazena esse valor. Será exibido na tela os valores para que o usuário confirme. Ao confirmar, o sistema executará o cálculo de acordo com os valore informados, baseando-se na formula do cálculo de perímetro de circunferência, e apresentará na tela o resultado para o usuário.
-- A003 – O usuário entra com o valor da base do retângulo, o sistema recebe e armazena esse valor. Após, o usuário entra com o valor da altura do retângulo que deseja obter a área, o sistema recebe e armazena esse valor. Será exibido na tela os valores para que o usuário confirme. Ao confirmar, o sistema executará o cálculo de acordo com os valore informados, baseando-se na formula do cálculo de área de retângulo, e apresentará na tela o resultado para o usuário.
-- A004 – O usuário entra com o valor da base do retângulo, o sistema recebe e armazena esse valor. Após, o usuário entra com o valor da altura do retângulo que deseja obter a área, o sistema recebe e armazena esse valor. Será exibido na tela os valores para que o usuário confirme. Ao confirmar, o sistema executará o cálculo de acordo com os valore informados, baseando-se na formula do cálculo de perímetro de retângulo, e apresentará na tela o resultado para o usuário.
-- A005 -
-- A006 -
+A001 até A004 
+ 	O usuário entra com o valor de Pi(3,14), o sistema recebe e armazena esse valor. Após, o usuário entra com o valor do raio da circunferência que deseja obter 
+a área, o sistema recebe e armazena esse valor. Será exibido na tela os valores para que o usuário confirme. Ao confirmar, o sistema executará o cálculo de acordo com 
+os valores informados, baseando-se formula do cálculo de área de circunferência, e apresentará na tela o resultado para o usuário.
+ 	O usuário entra com o valor de Pi(3,14), o sistema recebe e armazena esse valor. Após, o usuário entra com o valor do raio da circunferência que deseja obter 
+a área, o sistema recebe e armazena esse valor. Será exibido na tela os valores para que o usuário confirme. Ao confirmar, o sistema executará o cálculo de acordo com 
+os valore informados, baseando-se na formula do cálculo de perímetro de circunferência, e apresentará na tela o resultado para o usuário.
+	O usuário entra com o valor da base do retângulo, o sistema recebe e armazena esse valor. Após, o usuário entra com o valor da altura do retângulo que deseja 
+obter a área, o sistema recebe e armazena esse valor. Será exibido na tela os valores para que o usuário confirme. Ao confirmar, o sistema executará o cálculo de 
+acordo com os valore informados, baseando-se na formula do cálculo de área de retângulo, e apresentará na tela o resultado para o usuário.
+ 	O usuário entra com o valor da base do retângulo, o sistema recebe e armazena esse valor. Após, o usuário entra com o valor da altura do retângulo que 
+deseja obter a área, o sistema recebe e armazena esse valor. Será exibido na tela os valores para que o usuário confirme. Ao confirmar, o sistema executará o cálculo 
+de acordo com os valore informados, baseando-se na formula do cálculo de perímetro de retângulo, e apresentará na tela o resultado para o usuário.
 
 REGRAS DE NEGÓCIO
 *****************
@@ -163,6 +103,7 @@ HU0001 - Eu, como arquiteto, desejo obter o resultado da área de uma circunfer�
 HU0002 - Eu, como arquiteto, desejo obter o resultado do perímetro de uma circunferência, para executar meu projeto com exatidão.
 HU0003 - Eu, como arquiteto, desejo obter o resultado da área de um retângulo, para executar meu projeto com exatidão.
 HU0004 - Eu, como arquiteto, desejo obter o resultado do perímetro de um retângulo, para executar meu projeto com exatidão.
-HU0005 - Eu, como arquiteto, desejo alterar as unidades de medida durante o cálculo, para obter resultados precisos em diferentes medidas, de acordo com os requisitos do projeto arquitetônico.
+HU0005 - Eu, como arquiteto, desejo alterar as unidades de medida durante o cálculo, para obter resultados precisos em diferentes medidas, de acordo com os requisitos 
+do projeto arquitetônico.
 HU0006 - Eu, como arquiteto, desejo ter um histórico dos cálculos com data, para consultas posteriores quando for necessário para o projeto. 
 >>>>>>> 2f259e5b97100ae6521e0250f8966bebea746987

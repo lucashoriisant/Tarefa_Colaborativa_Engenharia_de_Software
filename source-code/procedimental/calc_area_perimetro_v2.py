@@ -6,8 +6,12 @@ raio = float(0)
 base = float(0)
 altura = float(0)
 
-units = ["centimetros", "metros", "kilometros"]
+units = ["milimetros", "centimetros", "metros"]
 activeUnit = units[1]
+
+a = [10, 20, 30, 40]
+print(a)
+
 
 resultList = []
 

@@ -9,10 +9,6 @@ altura = float(0)
 units = ["milimetros", "centimetros", "metros"]
 activeUnit = units[1]
 
-a = [10, 20, 30, 40]
-print(a)
-
-
 resultList = []
 
 
